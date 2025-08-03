@@ -1,0 +1,91 @@
+/* === Achievement Section === */
+.achievement-single {
+    background: #181c24;
+    padding: 60px 0 40px;
+}
+
+.achievement-single h2 {
+    color: #00fff7;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.18em;
+    margin-bottom: 40px;
+}
+
+.achievement-single h2 .trophy-icon {
+    color: gold;
+    margin-left: 16px;
+    font-size: 1.1em;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 6px #ffd70088);
+}
+
+.achievement-single-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.achievement-single-img,
+.achievement-single-desc {
+    background: #23272f;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 18px rgba(0, 255, 255, 0.13);
+    flex: 1 1 350px;
+    max-width: 450px;
+}
+
+.achievement-single-img img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #00fff7;
+    background: #fff;
+}
+
+.achievement-single-desc {
+    color: #e0e0e0;
+    padding: 32px 28px;
+    min-width: 260px;
+}
+
+.achievement-single-desc h3 {
+    color: #00fff7;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.achievement-single-img {
+    transition: box-shadow 0.4s cubic-bezier(.4, 2, .6, 1), transform 0.3s;
+}
+
+.achievement-single-img:hover,
+.achievement-single-img:focus {
+    box-shadow: 0 8px 40px 0 #00fff7, 0 0 0 6px #00fff755;
+    transform: scale(1.03);
+    z-index: 2;
+}
+
+.achievement-single-row-reverse {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 900px) {
+    .achievement-single-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .achievement-single-img,
+    .achievement-single-desc {
+        max-width: 95%;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
